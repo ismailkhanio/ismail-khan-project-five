@@ -10,7 +10,7 @@ class Header extends Component {
         </div>
         <div className="cartContainer">
           <i class="fas fa-shopping-cart"></i>
-          <p className="cartNum">0</p>
+          <p className="cartNum">99</p>
         </div>  
       </header>
     )

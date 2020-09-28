@@ -10,7 +10,7 @@ html { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: 
 
 /* GENERAL */
 html {
-  background-color: wheat;
+  background-color: #edf2f4;
   font-size: 62.5%;
 }
 
@@ -40,7 +40,8 @@ li {
 /* fonts */
 li, 
 p,
-a {
+a, label, 
+input[type=checkbox] {
   font-family: 'Roboto', sans-serif;
 }
 
@@ -49,51 +50,60 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: baseline;
-  height: 10vh;
+  height: 11vh;
 }
 
 /* logo and tagline */
 .logoHeading {
   font-family: 'Bungee Shade', cursive;
   font-size: 4.1rem;
-  color: firebrick;
 }
 
 .tagline {
   font-family: 'Oxygen Mono', monospace;
-  font-size: 1.6rem;
+  font-size: 2.1rem;
   padding-left: 40px;
-  padding-top: 10px;
-  font-style: italic
+  padding-top: 5px;
+  font-style: italic;
+  color: #2b2d42;
+}
+
+.logoHeading,
+.fa-shopping-cart {
+  color: #d90429;
 }
 
 /* cart icon */
 .cartContainer {
-  width: 75px;
-  height: 65px;
+  width: 52px;
+  height: 30px;
   position: relative;
+  cursor: pointer;
+}
+
+.cartNum {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 17px;
+  height: 15px;
+  font-size: 1.3rem;
+  color: #edf2f4;
+  background-color: #ef233c;
+  text-align: center;
 }
 
 .fa-shopping-cart {
   font-size: 3rem;
-  color: firebrick;
   text-align: center;
-}
-
-.cartNum {
-  border-radius: 80%;
-  width: 15px;
-  height: 20px;
-  background-color: white;
-  position: absolute;
-  font-size: 1.7rem;
-  color: black;
 }
 
 /* MAIN */
 main {
-  height: 80vh;
+  min-height: 80vh;
+  height: 100%;
   display: flex;
+  padding-bottom: 50px;
 }
 
 /* product categories */
@@ -101,28 +111,140 @@ main {
   width: 15vw;
 }
 
-.productCategory {
-  width: 80%;
-  height: 50px;
-  margin: 20px auto;
-  
-  background: red;
-  font-size: 2.1rem;
-  border: 1px solid red;
-  border-radius: 20%;
-  text-align: center;
+/* product category column */
+.itemGridCol {
+  margin-left: 5px;
+  width: 100%;
 }
+
+.categoryHeading {
+  color: #edf2f4;
+  background-color: #2b2d42;
+  padding: 10px 0;
+  border: 1px solid #8d99ae;
+  font-size: 2.3rem;
+}
+
+.categoryHeading, 
+.productCategory {
+  padding-left: 5px;
+}
+
+.productCategory {
+  color: #ef233c;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  margin: 20px 0;
+  
+  background: #edf2f4;
+  font-size: 2.1rem;
+  border-bottom: 1px solid #ef233c;
+  cursor: pointer;
+  
+}
+
+.productCategory:hover {
+  font-weight: 700;
+  border-bottom: 3px solid #ef233c;
+}
+
+/* item grid menu */
+.itemGridMenu {
+  background-color:#8d99ae;
+  display: flex;
+  align-items: center;
+  padding: 0 10px;
+  margin-bottom: 5px;
+  font-size: 1.6rem;
+}
+
+.itemGridMenu,
+.categoryHeading {
+  height: 50px;
+}
+
+.productResults {
+  width: 175px;
+  /* border: 1px solid red; */
+}
+
+.itemGridMenu label {
+  margin-left: 5px;
+}
+
+.onSaleCheck {
+  height: 15px;
+  width: 15px;
+}
+
+/* grid container */
+.gridContainer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
 
 /* product items */
 .itemContainer {
-  height: 300px;
+  height: 275px;
   width: 200px;
-  border: 1px solid firebrick;
+  border: 1px solid #ef233c;
+
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
 }
 
-main p {
-  font-size: 3rem;
+.itemContainer,
+.itemGridMenu {
+  margin-left: 20px;
 }
 
+.itemContainer img {
+  border-bottom: 1px solid red;
+}
 
+.itemName,
+.itemPrice {
+  padding: 0 10px;
+}
 
+.itemName {
+  text-align: left;
+  font-size: 1.7rem;
+  margin-bottom: 10px;
+}
+
+.itemPrice {
+  font-size: 3.2rem;
+}
+
+/* back to top button */
+.fa-arrow-alt-circle-up {
+  height: 88px;
+  width: 70px;
+  font-size: 4.3rem;
+  color: #d90429;
+  position: fixed;
+  bottom: 70px;
+  right: 0;
+  margin-right: 19px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* footer */
+footer {
+  background-color: #d90429;
+  color: #edf2f4;
+  height: 9vh;
+  font-size: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  line-height: 1.9rem;
+  padding: 10px 5px; 
+}

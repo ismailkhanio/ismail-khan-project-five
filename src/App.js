@@ -3,6 +3,7 @@ import './App.css';
 import Header from './Header.js';
 import Main from './Main.js';
 import Footer from './Footer.js';
+import BackToTop from './BackToTop.js';
 
 class App extends Component {
   // put main app in render method
@@ -16,8 +17,8 @@ class App extends Component {
       <Main />
 
       {/* footer */}
+      <BackToTop />
       <Footer />
-      
     </div>
   );
   }

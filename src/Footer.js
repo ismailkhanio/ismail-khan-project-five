@@ -4,9 +4,10 @@ class Footer extends Component {
   render() {
     return (
       <footer className="wrapper">
-        <p>footer</p>
+        <p>© 2020 Ismail Khan</p>
+        <p>Created at Juno College</p>
       </footer>
-    )
+    );
   }
 }
 
