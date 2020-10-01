@@ -1,6 +1,4 @@
 import React, { Component } from 'react';
-import { Switch, Route } from "react-router-dom";
-
 import './App.css';
 
 // components folder
@@ -15,11 +13,7 @@ class App extends Component {
     <div className="App">
       {/* logo, tagline, and cart icon */}
       <Header />
-
-      <Switch>
-        <Route exact path="/" component={ProductInventory} ></Route>
-      </Switch>
-
+      <ProductInventory />
       {/* footer */}
       <Footer />
     </div>
