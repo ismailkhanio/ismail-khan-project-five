@@ -1,8 +1,6 @@
 import React, { Component } from 'react';
-import {Link} from 'react-router-dom';
 import firebase from '../firebase';
 import Title from "./Title";
-import Cart from './Cart';
 
 class Product extends Component {
   constructor() {
@@ -20,36 +18,6 @@ class Product extends Component {
     // all products from firebase
     this.setProducts();
     // cart from firebase
-    this.setCart();
-  }
-
-  setCart = () => {
-    this.state.dbCart.on('value', (snapshot) => {
-      const tempCart = [];
-
-      const data = snapshot.val();
-      for (let key in data) {
-        const items = { 
-          key: key, 
-          item: data[key],
-        }
-
-        tempCart.push(items);
-      }
-
-      this.setState({ cart: tempCart });
-    }, () => {
-      this.props.HandleCart(this.state.cart);
-    })
-  }
-
-  handleAddCart = (item, index) => {
-    this.state.cart.push(item)
-
-    let newProducts = [...this.state.products];
-    newProducts[index].inventory = newProducts[index].inventory - 1
-
-    this.setState({products : newProducts})
   }
 
   setProducts = () => {
@@ -214,24 +182,12 @@ class Product extends Component {
                 key={index}
                 className="itemContainer"
               >
-                <img src={product.img} alt={product.name} />
+                <img src={product.img} alt={product.title} />
 
                 <div className="itemTextContainer">
                   <p className="itemName">{product.title}</p>
                   <p className="itemDescription">{product.description}</p>
                   <p className="itemPrice">{product.price}</p>
-                  {/* <p className="">{product.category}</p> */}
-                  {/* <button
-                    className="addCartBtn"
-                    onClick={() => {
-                      this.handleAddCart(product, index);
-                    }}
-                    id={index}
-                  >
-                    {" "}
-                    <i className="fas fa-cart-plus"></i>
-                    Add to Cart
-                  </button> */}
                 </div>
               </div>
             );

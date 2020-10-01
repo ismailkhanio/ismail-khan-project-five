@@ -244,6 +244,7 @@ main {
 /* product items */
 .itemContainer {
 	width: 300px;
+	max-height: 640px;
 	border: 1.4px solid var(--lightRed);
 
 	display: flex;

@@ -30,13 +30,6 @@ class Navbar extends Component {
                 </Link>
               </li>
             </ul>
-
-            <Link to="/cart">
-              <button className="headerBtn cartBtn">
-                <i className="fas fa-shopping-cart"></i>
-                Cart
-              </button>
-            </Link>
           </div>
         </header>
       </>
