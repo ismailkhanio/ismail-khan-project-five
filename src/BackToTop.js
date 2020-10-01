@@ -4,9 +4,8 @@ class BackToTop extends Component {
   render() {
     return (
       <div className="topButtonContainer">
-        <i class="fas fa-arrow-alt-circle-up"></i>
+        <i className="fas fa-arrow-alt-circle-up"></i>
       </div>
-      
     );
   }
 }

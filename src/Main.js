@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import ItemContainer from './ItemContainer.js'
-import CategoryCol from './CategoryCol.js'
 import ItemGridMenu from './ItemGridMenu.js'
 
 class Main extends Component {
@@ -8,10 +7,9 @@ class Main extends Component {
     return (
       <main className="wrapper">
         {/* product category column */}
-        <CategoryCol />
 
         <div className="itemGridCol">
-          <ItemGridMenu />
+          {/* <ItemGridMenu /> */}
     
           <div className="gridContainer">
             <ItemContainer />
