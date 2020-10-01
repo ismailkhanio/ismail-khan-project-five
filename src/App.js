@@ -10,9 +10,6 @@ import ProductInventory from './components/ProductInventory';
 import PageNotFound from "./components/PageNotFound";
 import Details from './components/Details';
 import Cart from './components/Cart';
-
-
-import Main from './Main.js';
 import Footer from './Footer.js';
 
 class App extends Component {
@@ -35,7 +32,7 @@ class App extends Component {
       <Cart />
       {/* footer */}
       {/* <BackToTop /> */}
-      {/* <Footer /> */}
+      <Footer />
     </div>
   );
   }

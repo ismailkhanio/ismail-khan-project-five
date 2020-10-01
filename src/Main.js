@@ -1,6 +1,4 @@
 import React, { Component } from 'react';
-import ItemContainer from './ItemContainer.js'
-import ItemGridMenu from './ItemGridMenu.js'
 
 class Main extends Component {
   render() {
@@ -9,7 +7,6 @@ class Main extends Component {
         {/* product category column */}
 
         <div className="itemGridCol">
-          {/* <ItemGridMenu /> */}
     
           <div className="gridContainer">
             <ItemContainer />
