@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "d68806f2c19da922593a183935bab0d0",
+    "revision": "69f0082499c2a9b8b71280e2a24de74a",
     "url": "/ismailkhanio/ismail-khan-project-five/index.html"
   },
   {
-    "revision": "073eca77db95fb5ead9c",
+    "revision": "cd617e8fe7a9771a0b70",
     "url": "/ismailkhanio/ismail-khan-project-five/static/css/main.0ba56110.chunk.css"
   },
   {
-    "revision": "2a163e9d217832b4bcd6",
-    "url": "/ismailkhanio/ismail-khan-project-five/static/js/2.4c179b12.chunk.js"
+    "revision": "226cb8c2bc0435c8f903",
+    "url": "/ismailkhanio/ismail-khan-project-five/static/js/2.bb89c90a.chunk.js"
   },
   {
-    "revision": "d0b13a04dd0dc4c851ad16fad1cc6f51",
-    "url": "/ismailkhanio/ismail-khan-project-five/static/js/2.4c179b12.chunk.js.LICENSE.txt"
+    "revision": "27bbadeef7d02efcaae5fffc16c6b291",
+    "url": "/ismailkhanio/ismail-khan-project-five/static/js/2.bb89c90a.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "073eca77db95fb5ead9c",
-    "url": "/ismailkhanio/ismail-khan-project-five/static/js/main.ac6021eb.chunk.js"
+    "revision": "cd617e8fe7a9771a0b70",
+    "url": "/ismailkhanio/ismail-khan-project-five/static/js/main.b284077a.chunk.js"
   },
   {
     "revision": "5d5819b10e3bfbd293ca",
